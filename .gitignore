@@ -3,3 +3,4 @@ node_modules
 browserstack.json
 log
 npm_install_debug.log
+results
