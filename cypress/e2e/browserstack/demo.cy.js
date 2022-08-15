@@ -12,6 +12,7 @@ describe('Test the browserstack documentation website', () => {
             .contains('Cypress')
             .parent()
             .click();
+        cy.wait(1000);
         cy.url().should('include', 'https://www.browserstack.com/docs/automate/cypress')
     });
 
@@ -30,6 +31,7 @@ describe('Test the search results pages', () => {
         cy.visit('https://www.browserstack.com/docs/');
         cy.get('#docs-search-bar-input')
             .type('cypress{enter}');
+        cy.wait(1000);
         cy.url().should('include', 'search?query=cypress&type=documentation');
         cy.get('input[value="documentation"]')
             .parent().parent()
@@ -41,6 +43,7 @@ describe('Test the search results pages', () => {
         cy.get('input[value="support"]')
             .parent().click();
         cy.url().should('include', 'type=support')
+        cy.wait(1000);
         cy.get('input[value="support"]')
             .parent().parent()
             .should('have.class', 'active')
