@@ -6,7 +6,7 @@ Under the build config, select 'Sxecute shell' and enter the following script.
 `make.js` will create a browserstack.json file with the authentication credentials from environment variables.
 
 ```
-npm install browserstack-cypress-cli
+npm install
 node make.js
 browserstack-cypress run
 ```
