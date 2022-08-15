@@ -1,5 +1,6 @@
 node_modules
 .idea
+browserstack.json
 log
 npm_install_debug.log
 results
